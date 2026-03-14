@@ -1,0 +1,23 @@
+/* style.css */
+
+/* Eski (Voor) fotoğrafları biraz daha soluk ve kirli gösterir */
+.effect-voor img { 
+    filter: contrast(0.95) sepia(0.1); 
+}
+
+/* Yeni (Na) fotoğrafları parlak, net ve canlı gösterir */
+.effect-na img { 
+    filter: brightness(1.15) contrast(1.1) saturate(1.2); 
+}
+
+/* Carousel için kaydırma çubuğunu gizleme */
+.scrollbar-hide::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Carousel aktif nokta (pagination) tasarımı */
+.dot-active { 
+    background-color: #ea580c !important; /* Tailwind orange-600 */
+    width: 2rem !important; 
+    border-radius: 9999px !important; 
+}
